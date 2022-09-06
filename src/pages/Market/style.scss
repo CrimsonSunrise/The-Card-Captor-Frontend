@@ -1,0 +1,14 @@
+.market {
+    position: relative;
+    
+    .market-container {
+        background-color: transparent;
+        margin-top: 50px;
+        margin-bottom: 100px;
+        
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.cursor-dot,
+.cursor-dot-outline {
+    position: absolute;
+    pointer-events: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    opacity: 1;
+    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+.cursor-dot {
+    z-index: 999;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.562);
+}
+
+.cursor-dot-outline {
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(160, 160, 160, 0.3);
+}
+
+@media only screen and (max-width: 600px) {
+    .cursor-dot,
+    .cursor-dot-outline {
+        display: none;
+    }
+}

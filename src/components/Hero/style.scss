@@ -1,0 +1,346 @@
+.hero {
+    position: relative;
+    // backgroundImage: url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.bid-modal {
+    .mantine-Modal-modal {
+        margin-top: 100px;
+        position: relative;
+
+        .bid-result {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            height: 300px;
+
+            .bid-value {
+                font-size: 80px;
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            // Button {
+            //     background-color: red;
+            // }
+        }
+    }
+}
+
+.skeleton-cards-container {
+    display: flex;
+    gap: 50px;
+    padding-top: 10px;
+    padding-right: 10px;
+
+    .auctionItem {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        align-items: center;
+
+        * {
+            animation: skeleton 1s linear;
+        }
+
+        @keyframes skeleton {
+            0% {
+                background-color: red;
+            }
+
+            50% {
+                background-color: green;
+            }
+        }
+    }
+}
+
+.container {
+    transition: 0.2s all;
+    height: 100%;
+    min-height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    // gap: theme.spacing.xl * 4;
+    padding-top: 100px;
+    // padding-bottom: theme.spacing.xl * 8;
+    padding-bottom: 100px;
+    z-index: 0;
+    position: relative;
+    // overflow: hidden;
+
+    // [theme.fn.smallerThan(sm)] {
+    //     height: 500;
+    //     padding-bottom: theme.spacing.xl * 0;
+    // }
+
+    .titleContainer {
+        transition: 0.2s all;
+        min-width: 400px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+        
+        .call-to-action {
+            margin-top: 60px;
+        }
+    }
+
+    .title {
+        transition: 0.2s all;
+        color: #f8f9fa;
+        font-size: 60px;
+        font-weight: 900;
+        line-height: 1.1;
+        // padding-top: theme.spacing.xl * 2;
+        padding-top: 0px;
+
+        // [theme.fn.smallerThan(sm)] {
+        //     font-size: 40;
+        //     line-height: 1.2;
+        // }
+
+        // [theme.fn.smallerThan(xs)] {
+        //     font-size: 28;
+        //     line-height: 1.3;
+        // };
+    }
+
+    .description {
+        transition: 0.2s all;
+        color: #f8f9fa;
+        max-width: 600px;
+
+        // [theme.fn.smallerThan(sm)] {
+        //     max-width: 100%;
+        //     font-size: theme.font-sizes.sm;
+        // };
+    }
+
+    // .control {
+    // margin-top: theme.spacing.xl * 0;
+    // margin-top: 10px;
+
+    // [theme.fn.smallerThan(sm)] {
+    //     width: 100%;
+    // };
+    // }
+
+    .bidSection {
+        transition: 0.2s all;
+        // height: 646px;
+        // height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        // padding-top: theme.spacing.xl * 2;
+        // padding-top: theme.spacing.xl * 2;
+        z-index: 1;
+        position: relative;
+        // min-width: 806px;
+        // width: 100%;
+        padding: 0 50px;
+        background-color: transparent;
+
+        // [theme.fn.smallerThan(sm)] {
+        //     height: 500;
+        //     padding-bottom: theme.spacing.xl * 3;
+        // };
+    }
+
+    .auction-time {
+        position: relative;
+        background-color: #f8f9fa;
+        border-radius: 4px;
+        padding: 10px 20px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        color: #222;
+        box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+        // margin: 0 100px;
+        gap: 5px;
+        margin-bottom: 20px;
+        margin-right: 10px;
+        font-size: 14px;
+
+        div {
+            font-weight: bold;
+        }
+    }
+
+    .bidAction {
+        position: relative;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & Button {
+            // boxShadow: theme.shadows.lg;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+            flex: 1;
+            // color: black;
+        }
+    }
+
+    // bidButton {
+    // 	position: relative;
+    // 	textAlign: center;
+    // 	width: 150
+    // }
+
+    .auctionItems {
+        position: relative;
+        // width: 100%;
+        background-color: transparent;
+        display: flex;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .auctionItem {
+        position: relative;
+        background-color: transparent;
+        // display: flex;
+    }
+
+    // .bids {
+
+    // }
+}
+
+.weekly-auction-wave {
+    transition: 0.2s all;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 2200px;
+    margin: center;
+    z-index: 1;
+    filter: drop-shadow(0 -20px 10px rgba(0, 0, 0, 0.3));
+
+    & * {
+        transition: 0.2s all;
+    }
+}
+
+// SMALL SCREENS
+@media screen and (max-width: 1300px) {
+    .container {
+        overflow: hidden;
+
+        background-color: transparent;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+        
+        .call-to-action {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title {
+            // min-width: 200px;
+            margin: 0 20px;
+            background-color: transparent;
+        }
+
+        .description {
+            // min-width: 200px;
+            padding: 0 20px;
+            background-color: transparent;
+        }
+
+        .bidSection {
+            background-color: transparent;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+
+            .auction-time {
+                margin-bottom: 0px;
+            }
+        }
+
+        & .auctionItems {
+            // margin-top: 200px;
+            // padding-right: 50px;
+            padding: 40px;
+            max-width: 900px;
+            min-height: 650px;
+            // justify-self: center;
+            overflow: hidden;
+            // overflow-x: hidden;
+            align-self: center;
+
+            // .auctionItem {
+
+            //     &:nth-child(1) {
+            //         // padding-left: 30px;
+            //     }
+
+            //     &:nth-child(3) {
+            //         // padding-right: 130px;
+            //     }
+
+            // }
+        }
+    }
+
+    // .weekly-auction-wave {
+    //     width:
+    // }
+}
+
+@media screen and (max-width: 930px) {
+    .container {
+        & .auctionItems {
+            align-self: flex-start;
+            overflow-x: auto;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+    }
+}
+
+// PHONES
+@media screen and (max-width: 660px) {
+    .container {
+        background-color: transparent;
+        flex-direction: column;
+
+        & .auctionItems {
+            background-color: transparent;
+            margin-left: -50px;
+            padding-left: 50px;
+            width: 100vw;
+
+            .auctionItem:nth-child(1) {
+                padding-left: 27px;
+            }
+
+            .auctionItem:nth-child(3) {
+                background-color: transparent;
+                padding-right: 55px;
+            }
+        }
+    }
+}

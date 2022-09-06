@@ -1,0 +1,147 @@
+.card-creator {
+    position: relative;
+    min-height: 700px;
+    
+    &.dark {
+        background-color: #222;
+        
+        .card-creator-container {
+            &.success {
+                .card-success {
+                    h1, h3 {
+                        color: #F8F9FA;
+                    }
+                }
+            }
+            
+            .mantine-Checkbox-label {
+                color: #F8F9FA;
+            }
+        }
+    }
+    
+    &.light {
+        background-color: #F8F9FA;
+    }
+    
+    .card-creator-container {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        background-color: transparent;
+        display: flex;
+        min-height: 600px;
+        padding: 0;
+        
+        &.success {
+            background-color: transparent;
+            flex-direction: column;
+            align-items: center;
+            
+            .card-success {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                * {
+                    text-align: center;
+                }
+            }
+            
+            .card-inputs {
+                display: none;
+            }
+        }
+        
+        .card-success {
+            display: none;
+        }
+        
+        .card-preview {
+            position: relative;
+            flex: 1;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .card-inputs {
+            position: relative;
+            flex: 1.5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: rgba(255, 0, 0, 0.0);
+            
+            .input-background {
+                // height: 450px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+                flex-direction: column;
+                gap: 10px;
+                height: 0;
+                overflow: hidden;
+                
+                &.active {
+                    height: auto;
+                }
+                
+                .mantine-Dropzone-root {
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+                
+                .change-image-wrapper {
+                    position: relative;
+                    width: 100%;
+                }
+                
+                .reactEasyCrop_Container {
+                    position: relative;
+                    margin: 0;
+                    
+                    background-color: transparent;
+                    width: 500px;
+                    height: 400px;
+                }
+                
+                .change-image-settings {
+                    
+                    background-color: transparent;
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    
+                    .zoom-wrapper {
+                        display: flex;
+                        align-items: center;
+                        padding-top: 20px;
+                        gap: 10px;
+                        
+                        .zoom-slider {
+                            background-color: transparent;
+                            width: 200px;
+                            
+                            .mantine-Slider-track::before {
+                                background-color: #258de22a;
+                            }
+                        }
+                    }
+                }
+                
+                .card-mockup {
+                    position: relative;
+                    width: 133px;
+                    height: 202px;
+                    border: 2px dashed rgba(0, 0, 0, 0.5);
+                    border-radius: 8px;
+                    transform: scale(1)
+                }
+            }
+            
+        }
+    }
+}

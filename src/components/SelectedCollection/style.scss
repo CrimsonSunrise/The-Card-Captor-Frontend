@@ -1,0 +1,75 @@
+.selected-collection {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    background-color: transparent;
+    height: 50px;
+    height: auto;
+    overflow: hidden;
+    
+    .selected-collection-header {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .selected-collection-cards {
+        position: relative;
+        display: flex;
+        gap: 5px;
+        overflow: hidden;
+        overflow-x: scroll;
+        flex-wrap: wrap;
+        background-color: yellow;
+        
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .collection-card {
+            flex-shrink: 0;
+            position: relative;
+            width: 260px;
+            height: 400px;
+            background-color: red;
+        }
+    }
+    
+    @media screen and (max-width: 1400px) {
+        
+    }
+
+    @media screen and (max-width: 1000px) {
+          
+    }
+
+    @media screen and (max-width: 600px) {
+        .selected-collection-cards {
+            flex-wrap: nowrap;
+        }
+    }
+}
+
+.modal-card {
+    
+    .mantine-Modal-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .mantine-Modal-modal {
+        background-color: transparent;
+    }
+    
+    .mantine-Modal-body {
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+    }
+}
